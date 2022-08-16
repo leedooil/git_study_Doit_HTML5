@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>HTML5 레이아웃 실습</title>
+    <style>
+        body{
+            font-family: "맑은 고딕","고딕","굴림";
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: rgba(235, 33, 201, 0.349);
+            border-bottom: 4px solid rgba(241, 90, 140, 0.5);
+        }
+        header nav{
+            float: right;
+            width: 70%;
+            margin-top: 10px;
+        }
+        nav ul{
+            list-style: none;
+            
+        }
+        nav ul li{
+            display: inline;
+            float: right;
+            font-weight: bold;
+            margin: 15px;
+        }
+        
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            
+        }
+        footer p {
+            padding: 20px;
+        }
+        footer{
+            clear: both;
+            width: 100%;
+            height: 60px;
+            margin-bottom: 0;
+            background-color: rgba(235, 33, 201, 0.349);
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        section article{
+            position: relative;
+            float: left;
+            width: 30%;
+            margin: 10px;
+            padding: 5px;
+            border: 1px dotted rgb(219, 47, 113);
+            height: 800px;
+        }
+        
+        #art1{top: 30%; left: 1%;}
+        #art2{top: 30%; left: 32%;}
+        #art3{top: 30%; left: 63%;}
+        #art4{top: 1050px;}
+        #box{
+            float: left;
+            width: 60%;
+            padding: 15px;
+            border: 1px dotted rgb(219, 47, 113);
+            box-sizing: border-box;
+        }
+        section ul {
+            list-style: none;
+            padding: 2px;
+            
+        }
+        section article{
+            border: 6px solid rgb(243, 40, 233);
+        
+        }
+        section ul {
+            line-height: 30px;
+        }
+        section ul li {
+            color: rgb(255, 0, 119);
+            font-weight: bold;
+        }
+        section ul li ol {
+            color: black;
+            font-weight: lighter;
+        }
+        div{
+            border: 4px solid rgba(241, 90, 140, 0.651);
+        }
+        #image{
+            
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">더불어살기</a></li>
+                <li><a href="#">건강돌보기</a></li>
+                <li><a href="#">입양하기</a></li>
+                <li><a href="#">애완견 종류</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2 id="image">애완견 종류</h2>
+        <article><img src="E:\leedooil_HTML5,CSS\web\images\dog2.png"><b>활달한 강아지</b>
+            <ul>
+                <li>요크셔 테리어
+                    <ol class="black">생기있고 활달한 성질을 가지고 있으며 자신보다 몸집이 큰 개나 집에 들어온 침입자를 겁내는 일이 없어 좋은 번견이고 우리나라 최고의 가정견으로 자리 잡고 있다.</ol>
+                </li>
+                <li>말티즈
+                    <ol class="black">애정이 많고, 충실하며 활발한 성격을 소유하고 있다. 이 종은 1급 가정견으로 요크셔테리어와 함께 우리나라 최고의 가정견으로 자리잡고 있다.</ol>
+                </li>
+                <li>포메 라이언
+                    <ol class="black">활기차고 명량한 개로 유명하고, 걷는 모습이 우아하다. 충실하고 우호적인 성격이 가장 먼저 거론된다.</ol>
+                </li>
+                <li>골든 리트리버
+                    <ol class="black">이 견종은 충성심이 강하고 성격이 활달하여 어린아이나 여성이 상대하기에 적합한 견종이다. 참을성 또한 강하며 현재는 실내에서도 많이 길러지고 있다.</ol>
+                </li>
+            </ul>
+        </article>
+        <article><img src="E:\leedooil_HTML5,CSS\web\images\dog2.png"><b>온순한 강아지</b>
+            <ul>
+                <li>쉬즈
+                    <ol class="black">얼굴에서 풍기는 모습처럼 온순, 쉽게 친숙해지고 우호적이며, 어린아이나 여성들이 기르기에 적합한 견종이다.</ol>
+                </li>
+                <li>퍼그
+                    <ol class="black">매우 사려가 깊고 사랑스러운 견종이며 그다지 손질이 필요하지 않고 식사량에 비해 많은 운동량이 필요하지 않다.</ol>
+                </li>
+                <li>레브라도 리트리버
+                    <ol class="black">침착하고 영리하여 어린이들을 안심하고 맡길 수 있다. 사람을 즐겁게 해주려는 성질이 있다. 공을 가지고 노는 것을 가장 좋아한다. 현재 맹인 안내견과 마약견으로 사용중이다. 온순한 강아지를 좋아하는 분에게는 적합한 견종이다.</ol>
+                </li>
+            </ul>
+        </article>
+        <article><img src="E:\leedooil_HTML5,CSS\web\images\dog2.png"><b>사납지만 복종적인 강아지</b>
+            <ul>
+                <li>미니어쳐핀셔
+                    <ol class="black">경계심이 강하고 영리하며 작은 몸집에 비해 매우 용감하다. 주인에게 매우 복종적이며 작은 몸집에 보디가드 역할을 충실히 수행한다.</ol>
+                </li>
+                <li>푸들
+                    <ol class="black">사납진 않으나, 상당히 복종적이며, 지능지수가 애완견종 중 가장 뛰어나다.</ol>
+                </li>
+                <li>폭스테리어
+                    <ol class="black">가정에서 키우기에 적합한 품종이다. 보호본능이 강하고 정이 많다. 하지만 사냥을 하면 본능이 조금은 남아있어 사나운 면이 있다. 이 종은 좋은 품종으로 기르기 위해서는 어릴 때부터 엄한 훈련이 필요하기도 하다.</ol>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <footer>
+        <p>published by funnycom</p>
+    </footer>
+</div>
+</body>
+</html>

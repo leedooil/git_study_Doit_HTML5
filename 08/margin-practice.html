@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델 실습하기</title>
+    <style>
+        nav{
+            background-color: mediumblue;
+            color: white;
+            background-size: 300px 200px;
+            padding: 10px 10px;
+
+        }
+        nav ul{
+            list-style-type: none;
+            text-align: right;
+           
+        }
+        nav ul li{
+            display: inline;
+            padding: 10px 15px;
+            margin-right: 70px;
+           
+            
+        }
+        nav ul li a:hover{
+            background-color: rgb(196, 196, 196);
+
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            
+        }
+        #bottom{
+            background-color: black;
+            color: white;
+            padding-left: 45%;
+            margin-top: 0px;
+            padding-top: 25px;
+            padding-bottom: 30px;
+        }
+        .contents1{
+            border-radius: 5px 5px;
+            padding: 10px 10px;
+            border: 1px;
+            border-style: solid;
+            border-color: black;
+            list-style: none;
+            margin: 15px;
+        }
+        .contents2{
+            border-radius: 15px 15px;
+            padding: 10px 10px;
+            border: 1px;
+            border-style: dotted;
+            border-color: purple;
+            list-style: none;
+            margin: 15px;
+        }
+        .contents3{
+            border-top-left-radius: 25px 25px;
+            border-bottom-right-radius: 25px 25px;
+            padding: 10px 10px;
+            border: 1px;
+            border-style: solid;
+            border-color: green;
+            list-style: none;
+            margin: 15px;
+        }
+        div div{
+            padding: 0px 0px;
+            
+        }
+        div ul{
+            color: purple;
+            font-weight: bold;
+            list-style: none;
+        }
+        div{
+            font-weight: bold;
+            border: 5px black;
+        }
+        .bottom2{
+            color: black;
+            list-style: disc;
+            padding-top: 0px;
+          
+        }
+        .black{
+            color: black;
+            font-weight: lighter;
+        }
+        .subject{
+            font-weight: bold;
+            color: white;
+            font-size: 25px;
+            float: left;
+            
+        }
+        .div2{
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+            
+        }
+        h4{
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <div>
+    <nav>
+        <ul>     <!-- #은 그냥 제자리로 -->
+            <li class="subject">애완견 종류</li>
+            <li><a href="#">애완견 종류</a></li>
+            <li><a href="#">입양하기</a></li>
+            <li><a href="#">건강돌보기</a></li>
+            <li><a href="#">더불어살기</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="div2">
+    <div class="contents1"><img src="E:\leedooil_HTML5,CSS\web\images\dog2.png">활달한 강아지</span>
+        <ul>
+            <li>요크셔 테리어
+                <ol class="black">생기있고 활달한 성질을 가지고 있으며 자신보다 몸집이 큰 개나 집에 들어온 침입자를 겁내는 일이 없어 좋은 번견이고 우리나라 최고의 가정견으로 자리 잡고 있다.</ol>
+            </li>
+            <li>말티즈
+                <ol class="black">애정이 많고, 충실하며 활발한 성격을 소유하고 있다. 이 종은 1급 가정견으로 요크셔테리어와 함께 우리나라 최고의 가정견으로 자리잡고 있다.</ol>
+            </li>
+            <li>포메 라이언
+                <ol class="black">활기차고 명량한 개로 유명하고, 걷는 모습이 우아하다. 충실하고 우호적인 성격이 가장 먼저 거론된다.</ol>
+            </li>
+            <li>골든 리트리버
+                <ol class="black">이 견종은 충성심이 강하고 성격이 활달하여 어린아이나 여성이 상대하기에 적합한 견종이다. 참을성 또한 강하며 현재는 실내에서도 많이 길러지고 있다.</ol>
+            </li>
+        </ul>
+    </div>
+    <div class="contents2"><img src="E:\leedooil_HTML5,CSS\web\images\dog2.png">온순한 강아지
+    <ul>
+        <li>쉬즈
+            <ol class="black">얼굴에서 풍기는 모습처럼 온순, 쉽게 친숙해지고 우호적이며, 어린아이나 여성들이 기르기에 적합한 견종이다.</ol>
+        </li>
+        <li>퍼그
+            <ol class="black">매우 사려가 깊고 사랑스러운 견종이며 그다지 손질이 필요하지 않고 식사량에 비해 많은 운동량이 필요하지 않다.</ol>
+        </li>
+        <li>레브라도 리트리버
+            <ol class="black">침착하고 영리하여 어린이들을 안심하고 맡길 수 있다. 사람을 즐겁게 해주려는 성질이 있다. 공을 가지고 노는 것을 가장 좋아한다. 현재 맹인 안내견과 마약견으로 사용중이다. 온순한 강아지를 좋아하는 분에게는 적합한 견종이다.</ol>
+        </li>
+    </ul>
+    </div>
+    <div class="contents3"><img src="E:\leedooil_HTML5,CSS\web\images\dog2.png">사납지만 복종적인 강아지
+        <ul>
+            <li>미니어쳐핀셔
+                <ol class="black">경계심이 강하고 영리하며 작은 몸집에 비해 매우 용감하다. 주인에게 매우 복종적이며 작은 몸집에 보디가드 역할을 충실히 수행한다.</ol>
+            </li>
+            <li>푸들
+                <ol class="black">사납진 않으나, 상당히 복종적이며, 지능지수가 애완견종 중 가장 뛰어나다.</ol>
+            </li>
+            <li>폭스테리어
+                <ol class="black">가정에서 키우기에 적합한 품종이다. 보호본능이 강하고 정이 많다. 하지만 사냥을 하면 본능이 조금은 남아있어 사나운 면이 있다. 이 종은 좋은 품종으로 기르기 위해서는 어릴 때부터 엄한 훈련이 필요하기도 하다.</ol>
+            </li>
+        </ul>
+    </div>
+
+    <h4>건강한 강아지는</h4>
+    <ul class="bottom2">
+        <li>코가 젖어있고 눈꼽이 없어야 합니다.</li>
+        <li>털에 윤기가 있는 것을 골라야 합니다.</li>
+        <li>입에서 고약한 냄새가 나면 병이 있다는 증거입니다.</li>
+        <li>가장 활발하게 움직이는 녀석을 고르는게 좋습니다.</li>
+        <li>강아지들 중에서 적당한 체구를 유지한 강아지가 좋습니다.</li>
+    </ul>
+    </div>
+    <div id="bottom">
+        Copyright 2012 funnycom
+    </div>
+</div>
+</body>
+</html>
