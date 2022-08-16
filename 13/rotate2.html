@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .origin{
+            width: 210px;
+            height: 200px;
+            margin: 56px;
+            float: left;
+            border: 1px solid black;
+            -webkit-perspective: 200px;
+        }
+        .rotatex{
+            -webkit-transform: rotateX(45deg);
+        }
+        .rotatey{
+            -webkit-transform: rotateY(45deg);
+        }
+        .rotatez{
+            -webkit-transform: rotateZ(45deg);
+        }
+        .rotatexyz{
+            -webkit-transform: rotate3d(2.5,1.2,-1.5,45deg);
+        }
+        img{
+            width: 200px;
+            height: 190px;
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="rotatex">
+            <img src="E:\leedooil_HTML5,CSS\images\tomato.jpg" alt="">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatey">
+            <img src="E:\leedooil_HTML5,CSS\images\tomato.jpg" alt="">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatez">
+            <img src="E:\leedooil_HTML5,CSS\images\tomato.jpg" alt="">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatexyz">
+            <img src="E:\leedooil_HTML5,CSS\images\tomato.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

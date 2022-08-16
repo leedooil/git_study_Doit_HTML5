@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        ul{
+            list-style: square;
+        }
+        li a{
+            line-height: 30px;
+            font-size: 14px;
+            color: blue;
+            text-decoration: none;
+        }
+        a[href $="g"]{ /* g로 끝나는 요소에 적용 */
+            background: url('E:/leedooil_HTML5,CSS/images/moon.jpg') center right no-repeat;
+            padding-right: 25px;
+            background-size: 15px;
+        }
+        a[href $="ls"]{ /* ls로 끝나는 요소에 적용 */
+            background: url('E:/leedooil_HTML5,CSS/images/math.png') center right no-repeat;
+            padding-right: 25px;
+            background-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h3>회사 소개 파일 다운 받기</h3>
+    <ul>
+        <li><a href="E:\leedooil_HTML5,CSS\images\moon.jpg">hwp 파일</a></li>
+        <li><a href="E:\leedooil_HTML5,CSS\images\math.xls">엑셀 파일</a></li>
+    </ul>
+</body>
+</html>
